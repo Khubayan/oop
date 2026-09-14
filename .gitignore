@@ -1,0 +1,37 @@
+# =============================================================================
+# Materi khusus guru — jangan dibagikan ke siswa
+# =============================================================================
+
+# Kunci jawaban latihan & referensi project lengkap
+kunci-jawaban/
+
+# Modul pengajaran (rencana 90 menit, jawaban diskusi, alur demo)
+modul/
+
+# Rubrik penilaian detail (siswa cukup lihat ringkasan di project/spesifikasi-project.md)
+rubrik/
+
+# =============================================================================
+# File sistem & editor
+# =============================================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.swp
+*~
+
+# =============================================================================
+# PHP / dependency (jika nanti ditambahkan)
+# =============================================================================
+
+/vendor/
+composer.lock
+.phpunit.result.cache
+
+# Environment & secrets
+.env
+.env.*
