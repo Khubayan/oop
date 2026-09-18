@@ -1,0 +1,36 @@
+b,,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3 
+(Optional)","Answer 4 
+(Optional)","Time Limit (sec) 
+(Max: 300 Seconds)","Correct Answer(s) 
+(Only Include Answer #)"
+1,Alur singkat saat user mengakses /items di Modul 6 adalah...,View -> Route -> URL,URL -> Route di web.php -> ItemController@method -> Model -> view/redirect,Seeder -> Migration -> View,Database -> Blade -> Route,20,2
+2,"Pada tabel pemetaan CRUD Modul 6, aksi list semua memakai HTTP method...",POST,GET,PUT,DELETE,20,2
+3,Method controller yang menampilkan form tambah (belum simpan ke DB) adalah...,store,create,index,update,20,2
+4,Method controller yang menerima data POST dan insert ke database adalah...,create,store,edit,index,20,2
+5,"Di method index(), data semua item diambil dengan...",Item::find(1),Item::all(),Item::delete(),Schema::all(),20,2
+6,"return view('items.index', compact('items')) setara dengan mengirim variabel...",route('items'),['items' => $items],@yield('items'),Item::count(),20,2
+7,"Pada method store(), data form diakses lewat...",$item->nama,$request->nama,session('nama'),@yield('nama'),20,2
+8,"Setelah Item::create() sukses di store(), controller biasanya...",return view('items.create'),return redirect()->route('items.index'),return Item::all(),php artisan migrate,20,2
+9,Route model binding ditulis di parameter method seperti...,Request $item,Item $item,string $item,View $item,20,2
+10,"Jika id di URL /items/5/edit tidak ada di database, Laravel mengembalikan...",Form kosong,200 OK dengan data baru,404 Not Found,Redirect ke seeder,20,3
+11,Named route untuk menyimpan data baru adalah...,items.create,items.store,items.update,items.destroy,20,2
+12,Perintah artisan untuk memfilter hanya route items adalah...,php artisan route:list --name=items,php artisan route:items,php artisan make:route items,php artisan db:seed --route=items,20,1
+13,Import class untuk menerima input form di store/update adalah...,use App\Models\Item;,use Illuminate\Http\Request;,use Illuminate\View\View;,use Database\Seeders\ItemSeeder;,20,2
+14,Modul 6 membuat ItemController dengan perintah...,php artisan make:controller ItemController --resource,php artisan make:controller ItemController,php artisan make:model ItemController,php artisan make:migration ItemController,20,2
+15,Alasan route GET /items/create harus sebelum route dengan {item}...,/items/create bisa tertangkap sebagai id 'create',Laravel wajib alfabetis,POST harus di atas semua GET,Named route tidak bisa dipakai,20,1
+16,"Route::delete('/items/{item}', ...) memanggil method...",store,update,destroy,create,20,3
+17,"Pada method update(), mengubah data yang sudah ada memakai...",Item::create(),$item->update([...]),Schema::dropIfExists('items'),migrate:fresh,20,2
+18,"Pada method destroy(), menghapus record memakai...",Item::truncate(),$item->delete(),Item::all(),Route::delete saja,20,2
+19,Modul 6 tidak memakai halaman detail. Method yang TIDAK dipakai adalah...,index,show,store,destroy,20,2
+20,Error View [items.index] not found saat buka /items di Modul 6 artinya...,Migration gagal,Normal - view dibuat di Modul 7,Seeder belum jalan,MySQL mati,20,2
+21,Menambahkan dd($item) di method edit berguna untuk...,Menghapus data,Melihat isi record Item yang dimuat dari URL,Membuat migration,Mendaftarkan route baru,20,2
+22,"Jika named route items.index diubah jadi item.index, redirect()->route('items.index') akan...",Tetap sukses,Error route name tidak ditemukan,Otomatis buat view,Jalankan seeder,20,2
+23,"Route::resource('items', ItemController::class) mendaftarkan sekitar...",2 route,6 route,7 route termasuk show,12 route,20,3
+24,Alur store: Form POST /items -> route items.store -> ...,index() -> view,store() -> Item::create() -> redirect index,destroy() -> delete,migrate -> seed,20,2
+25,LOGIKA: Method create() dipanggil. Baris di tabel items...,Langsung bertambah,Belum berubah - create hanya return view form,Terhapus semua,Otomatis di-seed,25,2
+26,LOGIKA: Form POST ke /items dan route items.store ada. Yang terjadi...,Hanya refresh halaman,store() jalan dan data baru tersimpan,index() menghapus semua data,Rollback migration,25,2
+27,LOGIKA: $item->update() dibanding Item::create()...,Keduanya selalu buat baris baru,update() mengubah record yang ada; create() insert baru,update() menghapus tabel,create() hanya di Tinker,25,2
+28,LOGIKA: destroy() sukses. Record di database...,Soft delete - masih ada,Hilang permanen (tanpa soft delete di modul ini),Pindah ke tabel lain,Hanya hilang di view,25,2
+29,LOGIKA: NOT - Manakah BUKAN dari 6 named route CRUD Modul 6?,items.create,items.show,items.update,items.destroy,25,2
+30,Checklist debug: 404 di /items/5/edit kemungkinan karena...,@yield hilang di layout,Record id 5 tidak ada - jalankan seeder,Belum npm run build,Tidak ada .env,20,2

@@ -1,0 +1,106 @@
+b,,,,,,,
+Question #,Question Text,Answer 1,Answer 2,"Answer 3 
+(Optional)","Answer 4 
+(Optional)","Time Limit (sec) 
+(Max: 300 Seconds)","Correct Answer(s) 
+(Only Include Answer #)"
+1,Analogi 'cetakan kue' dalam OOP merujuk pada...,Object,Method,Class,Property,20,3
+2,Kue hasil cetakan dalam analogi OOP disebut...,Class,Object,Property,Namespace,20,2
+3,Rasa dan warna kue dalam analogi OOP adalah...,Method,Constructor,Interface,Property,20,4
+4,Kemampuan 'kue bisa dimakan' dalam analogi OOP adalah...,Property,Method,Class,Object,20,2
+5,"Dalam pemrograman procedural, data dan fungsi biasanya...",Selalu dalam satu class,Terpisah,Hanya di constructor,Tidak bisa dipisah,20,2
+6,"Dalam OOP, data dan fungsi dikelompokkan dalam satu unit bernama...",Array,Function global,Class,File config,20,3
+7,Object dibuat dengan keyword...,create,new,object,instance,20,2
+8,Operator untuk akses property/method object di PHP adalah...,.,::,->,=>,20,3
+9,Property adalah...,Fungsi dalam class,Nama file PHP,Keyword reserved,Data/atribut dalam class,20,4
+10,Method adalah...,Variabel global,Nama object,Fungsi yang didefinisikan di dalam class,Tipe data khusus,20,3
+11,Class adalah...,Object yang sudah jadi,Blueprint/cetakan untuk membuat object,Method khusus PHP,Folder project,20,2
+12,Object adalah...,Nama class itu sendiri,File .php,Instance dari class,Method static,20,3
+13,Keyword untuk mendefinisikan class di PHP adalah...,object,new,struct,class,20,4
+14,Visibility property di contoh modul 1 adalah...,public,private,protected,readonly,20,1
+15,Sintaks membuat object dari class Buku yang benar...,$buku = new Buku();,$buku = Buku.new();,$buku = create Buku;,new class Buku;,20,1
+16,Cara set property setelah object dibuat...,"$obj.nama = ""nilai"";","$obj->nama = ""nilai"";","$obj::nama = ""nilai"";","set($obj, nama)",20,2
+17,Cara memanggil method object yang benar...,$obj->info();,$obj.info();,info($obj);,$obj::info;,20,1
+18,PHP memakai -> bukan . karena titik (.) digunakan untuk...,Concatenation/gabung string,Akses property,Membuat object,Import class,20,1
+19,Prasyarat pertemuan 1 termasuk penguasaan...,"Variabel, array, function, kondisi, perulangan",Laravel dan Blade,MySQL migration,HTML dan CSS saja,20,1
+20,"Jika dibuat 2 object dari class yang sama, data keduanya...",Selalu identik,Independen/terpisah,Hanya satu yang boleh ada,Menyebabkan error fatal,20,2
+21,Alasan OOP berguna saat program membesar...,PHP tidak perlu function lagi,Semua kode jadi 1 baris,Data dan fungsi lebih terorganisir,Tidak perlu variable,20,3
+22,Struktur isi class dibungkus dengan simbol...,( ),{ },[ ],< >,20,2
+23,Return type void pada method artinya method...,Tidak mengembalikan nilai,Wajib return null,Hanya boleh echo integer,Tidak boleh dipanggil,20,1
+24,"LOGIKA: $mobil = new Mobil(); $mobil->merk = ""Toyota""; echo $mobil->merk; output...",Toyota,Mobil,null,Error fatal,25,1
+25,LOGIKA: $p = new Produk(); $p->stok = 10; $p->jual(3); stok menjadi...,7,10,3,13,25,1
+26,NOT - Manakah BUKAN istilah OOP dasar pertemuan 1?,Property,Migration,Method,Object,20,2
+27,NOT - Manakah BUKAN bagian struktur class dasar?,public $property,public function metode(),kurung kurawal penutup },new di dalam class,20,4
+28,Tujuan pertemuan 1 salah satunya menjelaskan perbedaan...,Laravel dan Symfony,GET dan POST,Procedural dan OOP,Windows dan Linux,20,3
+29,Demo pertemuan 1 dijalankan dengan perintah...,npm run dev,php artisan serve,composer install,php contoh/pertemuan-01/Buku.php,20,4
+30,Tugas rumah pertemuan 1: buat class...,Migration,Mobil,Middleware,Route,20,2
+31,Property public pada object bisa diakses dari luar dengan...,operator ->,hanya di dalam class,operator .,tidak bisa diakses,20,1
+32,"LOGIKA: $b1 = new Buku(); $b2 = new Buku(); $b1->judul = ""A""; tanpa set $b2, judul $b2...","otomatis ""A""",sama dengan $b1,error fatal,belum di-set/kosong,25,4
+33,Kapan sebaiknya memakai OOP?,Script 3 baris sekali pakai,Hanya di framework Laravel,Tidak pernah di PHP,Program yang kompleks dan berkembang,20,4
+34,Penamaan class di PHP biasanya memakai gaya...,snake_case,kebab-case,semua huruf kecil tanpa pemisah,PascalCase,20,4
+35,$this di dalam method merujuk pada...,Nama class,Variable global,Object yang sedang memanggil method,File PHP saat ini,20,3
+36,$this hanya bisa dipakai di konteks...,Di dalam method instance class,Di luar class,Di file .env,Di komentar,20,1
+37,Mengubah $buku1->judul tidak mengubah $buku2->judul karena...,PHP bug,$this tidak aktif,Data tiap object independen,Class hanya 1 instance,20,3
+38,Berapa banyak object yang bisa dibuat dari 1 class?,Tidak terbatas,Hanya 1,Maksimal 2,Maksimal 10,20,1
+39,Analogi pertemuan 2: satu resep banyak kue artinya...,"Satu object, banyak class","Satu class, banyak object","Satu method, banyak file","Satu property, banyak class",20,2
+40,Error 'Undefined property' biasanya disebabkan...,Typo nama property,Lupa keyword new,Pakai $this di luar class,Constructor kosong,20,1
+41,Error 'Call to member function on null' sering karena...,Lupa new sebelum memanggil ->,Property public,Ada return type void,Nama class PascalCase,20,1
+42,Error 'Using $this when not in object context' karena...,Property belum public,Kurang titik koma,PHP versi terlalu baru,Method dipanggil tanpa object,20,4
+43,"$buku1 dan $buku2 dari class Buku yang sama, datanya...",Harus selalu sama,Hanya judul yang boleh beda,Tidak punya data,Bisa berbeda-beda,20,4
+44,"Dalam method info(), $this->judul mengambil property...",Object pemanggil method itu,Semua object sekaligus,Class induk,Variable global $judul,20,1
+45,File MultiBuku.php mendemonstrasikan...,1 object saja,Inheritance,3 object buku dengan data berbeda,Abstract class,20,3
+46,"Setelah $buku1->judul diubah di MultiBuku.php, $buku2->judul...",Ikut berubah sama,Menjadi null,Tidak berubah,Menghapus object,20,3
+47,foreach ($daftar as $buku) { $buku->info(); } akan...,Membuat class baru,Memanggil info() tiap object di array,Menghapus array,Error karena foreach,20,2
+48,$daftar[] = new Buku(); menambahkan ke array...,Object Buku baru,Definisi class Buku,Method info,String judul,20,1
+49,"LOGIKA: $b1 = new Buku(); $b1->judul = ""OOP""; $b2 = new Buku(); $b2->judul = ""PHP""; $b2->info() menampilkan judul...",OOP,Keduanya digabung,Error,PHP,25,4
+50,"LOGIKA: Setelah $buku1->judul = ""OOP dengan PHP"", $buku2->info() masih menampilkan...",OOP dengan PHP,String kosong,Algoritma Dasar — Ani Wijaya,Error fatal,25,3
+51,Mengapa $this lebih tepat daripada nama variable object di method?,Lebih cepat dieksekusi,Wajib di PHP 8,Mengganti keyword new,Jelas merujuk instance yang memanggil,20,4
+52,$buku = new Buku; (tanpa kurung) di PHP...,Selalu error fatal,Hanya di PHP 4,Valid/sintaks diperbolehkan,Hanya untuk constructor,20,3
+53,echo $buku->judul tanpa pernah set property biasanya...,"Menampilkan ""judul""",Error fatal langsung,null/kosong atau notice,Menampilkan 0,20,3
+54,NOT - Manakah BUKAN error umum pertemuan 2?,Undefined property,Call to member function on null,Using $this when not in object context,View not found,20,4
+55,Prasyarat pertemuan 2 adalah...,Pertemuan 1 — class dan object dasar,Pertemuan 5 — inheritance,Laravel routing,Database MySQL,20,1
+56,Tugas rumah pertemuan 2: buat 5 object Buku lalu tampilkan dengan...,migration,middleware,foreach loop,blade layout,20,3
+57,$this->tahun di method info() mengambil nilai dari...,Object lain di array,Class secara global,Object yang memanggil info(),Konstanta PHP,20,3
+58,Istilah instance dalam OOP artinya...,Object yang dibuat dari class,Method khusus,File autoload,Keyword new,20,1
+59,Class Buku di MultiBuku.php memiliki property...,hanya $this,route dan controller,"judul, penulis, tahun",hanya method,20,3
+60,"LOGIKA: 3 object buku dibuat, hanya buku1 diubah. Jumlah object lain yang ikut berubah...",3,2,0,Semua class,25,3
+61,Method info() memakai $this karena perlu akses...,Property milik object tersebut,Variable di luar class,Named route,Migration table,20,1
+62,Aktivitas 'eksplorasi error' di pertemuan 2 bertujuan...,Menghapus semua class,Memahami pesan error umum,Install Composer,Deploy ke server,20,2
+63,$daftar[0] setelah $daftar[] = new Buku() berisi...,"Nama string ""Buku""",Method info,Object Buku pertama di array,Class definition,20,3
+64,$buku2->info() setelah $buku1 diubah akan menampilkan data...,Milik buku1,Gabungan buku1 dan buku2,Random,Milik buku2 sendiri,20,4
+65,NOT - Pernyataan SALAH tentang multi-instance?,Bisa membuat banyak object,Data antar object independen,Semua object otomatis share nilai property,Satu class bisa banyak cetakan,20,3
+66,Preview pertemuan 3 setelah pertemuan 2 adalah topik...,Enkapsulasi,Polimorfisme,Trait,Constructor,20,4
+67,Review menit 0-10 pertemuan 2 mencakup...,Ujian akhir semester,Deploy production,Setup database,Quiz singkat materi pertemuan 1,20,4
+68,Constructor adalah method yang...,Dipanggil manual di akhir script,Hanya untuk menghapus object,Static dan tidak pakai $this,Otomatis dipanggil saat new,20,4
+69,Nama method constructor di PHP adalah...,construct,__init,__construct,Constructor,20,3
+70,Constructor dipanggil tepat saat...,Object dibuat dengan new,File PHP di-save,Method info() dipanggil,Program selesai,20,1
+71,Analogi constructor = formulir pendaftaran saat object...,Pertama kali dilahirkan/dibuat,Akan dihapus,Di-loop foreach,Di-import ke Laravel,20,1
+72,Fungsi utama constructor adalah...,Menghapus class,Render view Blade,Menjalankan migration,Menginisialisasi property object,20,4
+73,Property promotion (PHP 8+) artinya parameter constructor...,Menjadi method static,Langsung menjadi property class,Tidak boleh punya tipe,Hanya untuk private,20,2
+74,public function __construct(public string $judul) membuat $judul menjadi property...,private otomatis,public,protected wajib,bukan property,20,2
+75,Parameter dengan default value seperti $stok = 0 bersifat...,Wajib selalu diisi,Opsional saat membuat object,Hanya untuk string,Menyebabkan error,20,2
+76,"LOGIKA: new Buku(""PHP Dasar"", ""Budi"", 2025) di BukuConstructor.php, nilai $stok...",2025,0 (default),null,Error karena kurang argumen,25,2
+77,Keuntungan constructor dibanding set property manual satu per satu...,Tidak bisa validasi,Data object lengkap sejak awal,Lebih banyak baris wajib,Object tidak bisa dibuat,20,2
+78,Validasi di constructor: jika $stok < 0 maka diset ke...,-1,null,stok tidak diubah,0,20,4
+79,"LOGIKA: new Hewan(""neko"", ""kucing"", -2) dengan validasi stok, hasil $stok = ...",0,-2,2,Error fatal,25,1
+80,"LOGIKA: $buku1 stok awal 5, pinjam(2) berhasil, stok menjadi...",5,3,2,7,25,2
+81,"LOGIKA: $buku2 stok default 0, pinjam(1) mengembalikan...",false / Gagal,true / Berhasil,stok menjadi 1,Error,25,1
+82,Method pinjam() mengurangi stok hanya jika...,stok selalu 0,$this->stok >= $jumlah,tahun > 2020,judul tidak kosong,20,2
+83,"Constructor 4 parameter dengan 1 default, minimal argumen saat new...",4,1,0,3,20,4
+84,"new Buku(""PHP Dasar"", ""Budi"", 2025) property $tahun = ...",2025,0,tidak ter-set,Error,20,1
+85,"Latihan Anggota: jika email tidak diisi, default-nya...",string kosong saja,tidak-ada@email.com,null tanpa default,error fatal,20,2
+86,Parameter dengan default value sebaiknya diletakkan...,Di akhir daftar parameter,Di awal daftar,Di tengah bebas,Di luar constructor,20,1
+87,__construct boleh memiliki...,Tidak boleh parameter sama sekali,Hanya return int,Parameter untuk inisialisasi,Hanya static,20,3
+88,"Setelah constructor selesai dijalankan, property object...",Selalu null permanen,Hanya bisa private,Tidak ada property,Sudah bisa terisi nilai,20,4
+89,Refactor class Buku pertemuan 2 pakai constructor agar...,Menghapus semua method,Ganti ke procedural,Wajib pakai Laravel,Tidak perlu set property satu-satu,20,4
+90,NOT - Manakah BUKAN topik pertemuan 3?,__construct,Inheritance,Default value parameter,Property promotion,20,2
+91,Prasyarat pertemuan 3 mencakup penguasaan...,Laravel Eloquent,Vue.js,$this dan multi-instance (pertemuan 2),SQL join,20,3
+92,Demo pertemuan 3 dijalankan dari file...,contoh/pertemuan-02/MultiBuku.php,contoh/pertemuan-03/BukuConstructor.php,routes/web.php,package.json,20,2
+93,Method info() di BukuConstructor.php mengembalikan tipe...,void,string,int,bool,20,2
+94,"LOGIKA: $buku1 stok 5, pinjam(2) sukses, info() menampilkan stok...",3,5,2,0,25,1
+95,Property promotion mengurangi kebutuhan menulis di body constructor...,class keyword,new keyword,public function,$this->prop = $prop,20,4
+96,"LOGIKA: new Buku(""Belajar OOP"", ""Pak Guru"", 2026, 50) nilai $stok = ...",0,2026,1000,50,25,4
+97,"Latihan guided: new Buku(..., 2025) tanpa argumen stok ke-4, default stok = ...",0,50,1000,2025,20,3
+98,Default value berguna untuk parameter yang...,Wajib selalu diisi,Mengganti nama class,Menghapus method,Opsional seperti stok atau email,20,4
+99,Preview materi setelah constructor (pertemuan 4) adalah...,Laravel routing,Git merge,Enkapsulasi,HTML form,20,3
+100,"LOGIKA: Constructor manual ($this->judul = $judul) vs promotion, hasil akhir property judul...",Promotion tidak membuat property,Sama — property terisi,Manual tidak bisa set property,Hanya promotion yang valid,25,2

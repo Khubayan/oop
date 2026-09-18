@@ -7,9 +7,7 @@
 ## Bagian A — Konsep (Isian)
 
 1. `$this` artinya: _____________________________________________
-
 2. Jika `$buku1` dan `$buku2` dari class yang sama, apakah datanya sama? __________
-
 3. Mengubah `$buku1->judul` akan mengubah `$buku2->judul`? __________
 
 ---
@@ -30,7 +28,7 @@ class Buku {
     }
 }
 
-$daftar = [];
+$daftar = []; //array
 
 $daftar[] = new Buku();
 $daftar[0]->judul = "OOP PHP";
@@ -46,9 +44,12 @@ foreach ($daftar as $buku) {
 
 ---
 
+
+
 ## Bagian C — Mandiri: Class Hewan
 
 Buat class `Hewan` dengan:
+
 - Property: `$nama`, `$jenis`
 - Method: `makan()` → "Si {nama} sedang makan"
 - Method: `tidur()` → "Si {nama} sedang tidur"
@@ -63,6 +64,8 @@ Buat **minimal 3 object** hewan berbeda.
 ```
 
 ---
+
+
 
 ## Bagian D — Eksplorasi Error
 
@@ -80,8 +83,11 @@ Error yang ditemukan: ___________________________________________
 
 ---
 
+
+
 ## Bagian E — Refleksi
 
 Kapan menurut Anda `$this` paling berguna?
 
-_______________________________________________________________
+---
+
