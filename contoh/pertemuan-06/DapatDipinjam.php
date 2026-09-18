@@ -2,9 +2,12 @@
 
 /**
  * Pertemuan 6 — Polymorphism
+ * Jalankan: php contoh/pertemuan-06/DapatDipinjam.php
+ *
  * Interface DapatDipinjam diimplementasi oleh BukuFisik dan BukuDigital.
  */
 
+// LANGKAH 1: Definisikan kontrak interface
 interface DapatDipinjam
 {
     public function pinjam(): bool;
@@ -12,6 +15,7 @@ interface DapatDipinjam
     public function getInfo(): string;
 }
 
+// LANGKAH 2: Implementasi BukuFisik — stok terbatas
 class BukuFisik implements DapatDipinjam
 {
     public function __construct(
@@ -39,19 +43,17 @@ class BukuFisik implements DapatDipinjam
     }
 }
 
+// LANGKAH 3: Implementasi BukuDigital — unlimited
 class BukuDigital implements DapatDipinjam
 {
     public function __construct(private string $judul) {}
 
     public function pinjam(): bool
     {
-        return true; // digital unlimited
+        return true;
     }
 
-    public function kembalikan(): void
-    {
-        // digital tidak perlu dikembalikan
-    }
+    public function kembalikan(): void {}
 
     public function getInfo(): string
     {
@@ -59,6 +61,7 @@ class BukuDigital implements DapatDipinjam
     }
 }
 
+// LANGKAH 4: Function dengan type hint interface
 function prosesPinjam(DapatDipinjam $item): void
 {
     if ($item->pinjam()) {
@@ -78,3 +81,8 @@ echo "=== Polimorfisme: satu loop, beda perilaku ===\n";
 foreach ($koleksi as $item) {
     prosesPinjam($item);
 }
+
+// LANGKAH 5: Skenario stok habis — uncomment untuk uji
+echo "\n=== Skenario: pinjam sampai stok habis ===\n";
+prosesPinjam($bukuFisik); // stok 1 → 0
+prosesPinjam($bukuFisik); // stok 0 → GAGAL

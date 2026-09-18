@@ -12,6 +12,8 @@
 
 3. Type hint `DapatDipinjam` di parameter artinya: ___________________________
 
+4. Method `cariBuku()` return `null` jika: _________________________________
+
 ---
 
 ## Bagian B — Guided: Class Perpustakaan Sederhana
@@ -38,7 +40,20 @@ class Perpustakaan {
 
 ---
 
-## Bagian C — Mandiri: Project Starter
+## Bagian C — Tracing Alur
+
+Urutkan langkah saat menjalankan `demo.php`:
+
+| Langkah | Urutan (1, 2, 3...) |
+|---------|---------------------|
+| require_once semua class | |
+| new Perpustakaan() | |
+| tambahBuku() dan tambahAnggota() | |
+| tampilkanBuku() dan tampilkanAnggota() | |
+
+---
+
+## Bagian D — Mandiri: Project Starter
 
 Di folder `project/perpustakaan-starter/`:
 
@@ -48,8 +63,16 @@ Di folder `project/perpustakaan-starter/`:
 
 ---
 
-## Refleksi
+## Bagian E — Refleksi
 
-Mengapa class dipisah ke beberapa file?
+1. Mengapa class dipisah ke beberapa file?
+
+_______________________________________________________________
+
+2. Bagian integrasi mana yang paling menantang?
+
+_______________________________________________________________
+
+3. Mengapa `Perpustakaan` menggunakan komposisi, bukan inheritance?
 
 _______________________________________________________________

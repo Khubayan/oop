@@ -12,6 +12,8 @@
 
 3. Getter digunakan untuk: ________________________________________
 
+4. Method bisnis (misal `pinjam()`) berbeda dari getter karena: _________________________________
+
 ---
 
 ## Bagian B — Guided: Class Rekening
@@ -88,8 +90,34 @@ Buat class `Akun`:
 
 ---
 
-## Bagian E — Refleksi
+## Bagian E — Uji Pemahaman Error
 
-Mengapa password sebaiknya `private`?
+Jalankan `php contoh/pertemuan-04/BukuEncapsulated.php`, lalu uncomment baris `$buku->stok = 999`.
+
+1. Pesan error lengkap yang muncul:
+
+_______________________________________________________________
+
+2. Mengapa PHP menolak akses tersebut?
+
+_______________________________________________________________
+
+3. Cara yang benar untuk mengetahui stok buku:
+
+_______________________________________________________________
+
+---
+
+## Bagian F — Refleksi
+
+1. Dengan kata-kata sendiri, apa arti enkapsulasi?
+
+_______________________________________________________________
+
+2. Mengapa password sebaiknya `private`?
+
+_______________________________________________________________
+
+3. Di project perpustakaan, property apa yang sebaiknya private? Mengapa?
 
 _______________________________________________________________

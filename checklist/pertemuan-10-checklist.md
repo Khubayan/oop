@@ -10,7 +10,8 @@
 | 4 | Dapat tunjuk encapsulation di kode | | | | | |
 | 5 | Dapat tunjuk inheritance di kode | | | | | |
 | 6 | Dapat tunjuk polymorphism di kode | | | | | |
-| 7 | Checklist akhir modul diisi jujur | | | | | |
+| 7 | Dapat debug error umum secara mandiri | | | | | |
+| 8 | Checklist akhir modul diisi jujur | | | | | |
 
 ## Skor Project (guru)
 

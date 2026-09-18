@@ -2,9 +2,12 @@
 
 /**
  * Pertemuan 5 — Inheritance
+ * Jalankan: php contoh/pertemuan-05/BukuInheritance.php
+ *
  * BukuFisik dan BukuDigital extends Buku.
  */
 
+// LANGKAH 1: Parent class — property protected agar bisa diakses anak
 class Buku
 {
     public function __construct(
@@ -24,6 +27,7 @@ class Buku
     }
 }
 
+// LANGKAH 2: Class anak — extends + parent::__construct()
 class BukuFisik extends Buku
 {
     public function __construct(
@@ -35,6 +39,7 @@ class BukuFisik extends Buku
         parent::__construct($judul, $penulis, $stok);
     }
 
+    // LANGKAH 3: Override info() — panggil parent::info() lalu tambah info
     public function info(): string
     {
         return parent::info() . " [Fisik, Rak: {$this->rak}]";
@@ -48,7 +53,7 @@ class BukuDigital extends Buku
         string $penulis,
         private string $format
     ) {
-        parent::__construct($judul, $penulis, 999);
+        parent::__construct($judul, $penulis, 999); // digital: stok "unlimited"
     }
 
     public function info(): string
@@ -57,6 +62,7 @@ class BukuDigital extends Buku
     }
 }
 
+echo "=== Demo Inheritance ===\n";
 $bukuFisik = new BukuFisik("Algoritma", "Budi", 5, "A-12");
 $bukuDigital = new BukuDigital("OOP PHP", "Ani", "PDF");
 

@@ -36,19 +36,44 @@
 
 ---
 
-## Bagian C — Refleksi Akhir
+## Bagian C — Debug Mandiri
+
+Pilih 1 error yang pernah Anda temui saat mengerjakan project:
+
+| Pertanyaan | Jawaban |
+|------------|---------|
+| Pesan error lengkap | |
+| File dan baris | |
+| Penyebab | |
+| Cara memperbaiki | |
+
+---
+
+## Bagian D — Refleksi Akhir
 
 1. Konsep OOP mana yang paling sulit?
 
 _______________________________________________________________
 
-2. Apa rencana saya setelah lulus materi ini?
+2. Konsep OOP mana yang paling berguna di project?
+
+_______________________________________________________________
+
+3. Satu hal yang saya banggakan dari project ini:
+
+_______________________________________________________________
+
+4. Apa rencana saya setelah lulus materi ini?
+
+_______________________________________________________________
+
+5. Jika mulai dari awal, apa yang akan saya lakukan berbeda?
 
 _______________________________________________________________
 
 ---
 
-## Bagian D — Peer Review (opsional)
+## Bagian E — Peer Review (opsional)
 
 Review project teman — beri 1 pujian dan 1 saran:
 

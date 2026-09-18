@@ -4,12 +4,13 @@
 
 | No | Indikator | Belum | Sebagian | Paham | Mampu Praktik | Bukti |
 |----|-----------|:-----:|:--------:|:-----:|:-------------:|-------|
-| 1 | Dapat membedakan komposisi (has-a) dan inheritance (is-a) | | | | | |
-| 2 | Dapat mengelola array of objects | | | | | |
-| 3 | Dapat membuat class Perpustakaan kelola buku & anggota | | | | | |
-| 4 | Dapat mencari object dalam array (cariBuku, cariAnggota) | | | | | |
-| 5 | Dapat memecah kode ke beberapa file dengan require_once | | | | | |
-| 6 | Dapat menambah buku dan anggota ke perpustakaan | | | | | |
+| 1 | Dapat menjelaskan komposisi (has-a) dengan kata sendiri | | | | | |
+| 2 | Dapat membedakan komposisi (has-a) dan inheritance (is-a) | | | | | |
+| 3 | Dapat mengelola array of objects | | | | | |
+| 4 | Dapat membuat class Perpustakaan kelola buku & anggota | | | | | |
+| 5 | Dapat mencari object dalam array (cariBuku, cariAnggota) | | | | | |
+| 6 | Dapat memecah kode ke beberapa file dengan require_once | | | | | |
+| 7 | Dapat menambah buku dan anggota ke perpustakaan | | | | | |
 
 ## Catatan Guru
 

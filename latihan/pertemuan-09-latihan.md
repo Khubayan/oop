@@ -39,7 +39,20 @@ public function kembali(string $idAnggota, string $judulBuku, int $hariKembali):
 
 ---
 
-## Bagian C — Pertanyaan
+## Bagian C — Urutan Validasi
+
+Urutkan langkah validasi saat pinjam (tulis angka 1–4):
+
+| Langkah | Urutan |
+|---------|--------|
+| Cek stok buku cukup | |
+| Cek anggota ada | |
+| Cek buku ada | |
+| Cek anggota belum max pinjam | |
+
+---
+
+## Bagian D — Pertanyaan
 
 1. Apa yang dilakukan jika pinjam gagal setelah anggota sudah dicatat?
 
@@ -47,10 +60,22 @@ _______________________________________________________________
 
 2. Rumus denda Anda: ___________________________________________
 
+3. Mengapa return array `['sukses' => bool, 'pesan' => ...]` lebih baik daripada echo langsung di method?
+
+_______________________________________________________________
+
 ---
 
-## Refleksi
+## Bagian E — Refleksi
 
-Validasi mana yang menurut Anda paling penting?
+1. Bagian implementasi mana yang paling sulit?
+
+_______________________________________________________________
+
+2. Validasi mana yang menurut Anda paling penting?
+
+_______________________________________________________________
+
+3. Bagaimana rollback menjaga data tetap konsisten?
 
 _______________________________________________________________

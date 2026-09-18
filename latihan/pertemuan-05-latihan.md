@@ -12,6 +12,8 @@
 
 3. Relasi inheritance disebut relasi: _______________ (is-a / has-a)
 
+4. `protected` bisa diakses dari: _______________ (class sendiri / class anak / luar class)
+
 ---
 
 ## Bagian B — Guided: Class Hewan
@@ -44,7 +46,28 @@ $kucing->suara();
 
 ---
 
-## Bagian C — Mandiri: Kendaraan
+## Bagian C — Tracing Output
+
+Tanpa menjalankan kode, prediksi output:
+
+```php
+class Buku {
+    protected string $judul;
+    public function __construct(string $judul) { $this->judul = $judul; }
+    public function info(): string { return $this->judul; }
+}
+class BukuFisik extends Buku {
+    public function info(): string { return parent::info() . " [Fisik]"; }
+}
+$b = new BukuFisik("OOP");
+echo $b->info();
+```
+
+Output yang diharapkan: _______________________________________________
+
+---
+
+## Bagian D — Mandiri: Kendaraan
 
 Buat:
 - Class `Kendaraan` — `$merk`, `$tahun`, method `info()`
@@ -60,14 +83,22 @@ Buat:
 
 ---
 
-## Bagian D — Override Method
+## Bagian E — Override Method
 
 Tambahkan method `biayaServis()` di `Kendaraan` return 0. Override di `Mobil` return 500000, di `Motor` return 150000.
 
 ---
 
-## Refleksi
+## Bagian F — Refleksi
 
-Kapan sebaiknya TIDAK pakai inheritance?
+1. Dengan kata-kata sendiri, apa arti inheritance?
+
+_______________________________________________________________
+
+2. Kapan sebaiknya TIDAK pakai inheritance?
+
+_______________________________________________________________
+
+3. Mengapa `BukuFisik` extends `Buku`, bukan sebaliknya?
 
 _______________________________________________________________

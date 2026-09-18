@@ -1,10 +1,13 @@
 <?php
 
 /**
- * Pertemuan 4 — Encapsulation
- * Stok dilindungi dengan private, akses lewat method.
+ * Pertemuan 4 — DENGAN Enkapsulasi (solusi)
+ * Jalankan: php contoh/pertemuan-04/BukuEncapsulated.php
+ *
+ * Bandingkan dengan TanpaEncapsulation.php — stok dilindungi private.
  */
 
+// LANGKAH 1: Stok private — tidak bisa diakses dari luar
 class Buku
 {
     public function __construct(
@@ -18,6 +21,7 @@ class Buku
         }
     }
 
+    // LANGKAH 2: Getter — hanya membaca, tidak mengubah
     public function getStok(): int
     {
         return $this->stok;
@@ -30,6 +34,7 @@ class Buku
         }
     }
 
+    // LANGKAH 3: Method bisnis — ubah data + validasi
     public function pinjam(int $jumlah = 1): bool
     {
         if ($jumlah > 0 && $this->stok >= $jumlah) {
@@ -54,11 +59,14 @@ class Buku
 
 $buku = new Buku("Belajar OOP", "Pak Guru", 2026, 3);
 
+echo "=== Demo Enkapsulasi ===\n";
 echo $buku->info() . "\n";
+
 echo "Pinjam 1: " . ($buku->pinjam(1) ? "Berhasil" : "Gagal") . "\n";
 echo $buku->info() . "\n";
 
 $buku->kembalikan(1);
 echo "Setelah dikembalikan: " . $buku->info() . "\n";
 
-// $buku->stok = 999; // ERROR: Cannot access private property
+// LANGKAH 4: Coba akses langsung — uncomment baris di bawah untuk demo error
+// $buku->stok = 999; // ERROR: Cannot access private property Buku::$stok

@@ -1,11 +1,16 @@
 <?php
 
+/**
+ * Pertemuan 8 — Class Perpustakaan (komposisi has-a)
+ * Perpustakaan PUNYA array buku dan anggota — bukan extends Buku.
+ */
+
 class Perpustakaan
 {
-    /** @var DapatDipinjam[] */
+    /** @var DapatDipinjam[] Koleksi buku — komposisi has-a */
     private array $buku = [];
 
-    /** @var Anggota[] */
+    /** @var Anggota[] Daftar anggota terdaftar */
     private array $anggota = [];
 
     public function tambahBuku(DapatDipinjam $buku): void

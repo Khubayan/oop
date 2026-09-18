@@ -1,11 +1,19 @@
 <?php
 
+/**
+ * Pertemuan 9 — PerpustakaanLengkap dengan pinjam/kembali + denda
+ * Extends Perpustakaan dari pertemuan 8.
+ */
+
 require_once __DIR__ . '/../pertemuan-08/Perpustakaan.php';
 require_once __DIR__ . '/../pertemuan-08/Config.php';
 
 class PerpustakaanLengkap extends Perpustakaan
 {
     /**
+     * Validasi berlapis: anggota → buku → max pinjam → stok.
+     * Rollback jika buku->pinjam() gagal setelah anggota dicatat.
+     *
      * @return array{sukses: bool, pesan: string}
      */
     public function pinjam(string $idAnggota, string $judulBuku, int $lamaPinjamHari): array
@@ -25,7 +33,7 @@ class PerpustakaanLengkap extends Perpustakaan
         }
 
         if (!$buku->pinjam()) {
-            $anggota->catatKembali($judulBuku);
+            $anggota->catatKembali($judulBuku); // rollback
             return ['sukses' => false, 'pesan' => 'Stok buku habis'];
         }
 

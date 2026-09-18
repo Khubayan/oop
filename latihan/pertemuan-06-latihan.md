@@ -12,6 +12,8 @@
 
 3. Polimorfisme artinya: ________________________________________
 
+4. Type hint `DapatDipinjam` di parameter artinya parameter harus: _________________________________
+
 ---
 
 ## Bagian B — Guided: Interface Bentuk
@@ -49,7 +51,27 @@ foreach ($bentuk as $b) {
 
 ---
 
-## Bagian C — Mandiri: DapatDipinjam
+## Bagian C — Tracing Output
+
+Tanpa menjalankan, prediksi output (urutan baris):
+
+```php
+interface DapatDipinjam { public function pinjam(): bool; }
+class A implements DapatDipinjam { public function pinjam(): bool { return true; } }
+class B implements DapatDipinjam { public function pinjam(): bool { return false; } }
+$items = [new A(), new B()];
+foreach ($items as $i) {
+    echo $i->pinjam() ? "OK\n" : "Gagal\n";
+}
+```
+
+Output:
+1. __________
+2. __________
+
+---
+
+## Bagian D — Mandiri: DapatDipinjam
 
 Buat interface `DapatDipinjam` dengan method `pinjam(): bool` dan `kembalikan(): void`.
 
@@ -66,8 +88,16 @@ Buat function `prosesPinjam(DapatDipinjam $item)` yang memanggil `pinjam()`.
 
 ---
 
-## Refleksi
+## Bagian E — Refleksi
 
-Apa beda interface dan class biasa?
+1. Dengan kata-kata sendiri, apa arti polimorfisme?
+
+_______________________________________________________________
+
+2. Apa beda interface dan class biasa?
+
+_______________________________________________________________
+
+3. Kapan interface lebih tepat daripada inheritance?
 
 _______________________________________________________________
